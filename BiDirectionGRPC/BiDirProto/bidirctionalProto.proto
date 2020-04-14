@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package BiDirProto;
+
+message Request {
+    int32 num=1;
+}
+message Response {
+    int32 result=1;
+}
+
+service SimpleStreamService {
+    rpc Max (stream Request) returns (stream Response){};
+}

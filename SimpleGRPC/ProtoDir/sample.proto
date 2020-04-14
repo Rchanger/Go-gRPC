@@ -1,0 +1,20 @@
+syntax= "proto3";
+
+package ProtoDir;
+
+
+// to accept the request
+message RequestData {
+    int64 firstNumber = 1;
+    int64 SecondNumber = 2;
+}
+
+// to send the response to request
+message ResponseData {
+    int64 Result = 1;
+}
+
+service CalService {
+    rpc Add (RequestData) returns (ResponseData){};
+    rpc Subtract (RequestData) returns (ResponseData){};
+}

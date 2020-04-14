@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package ServerSideStreamingProto;
+
+message Request {
+    int32 Num=1;
+}
+
+message Response {
+    int32 Result=1;
+}
+
+service SimpleService {
+    rpc GetDivisors (Request) returns (stream Response) {};
+}
