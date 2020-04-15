@@ -8,7 +8,7 @@ import (
 	"math/rand"
 	"time"
 
-	pb "GRPCExample/BiDirectionGRPC/BiDirProto"
+	pb "github.com/Rchanger/Go-gRPC/BiDirectionGRPC/BiDirProto"
 
 	"google.golang.org/grpc"
 )

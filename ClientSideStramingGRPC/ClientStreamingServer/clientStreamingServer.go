@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "GRPCExample/ClientSideStramingGRPC/ClientSideStramingProto"
+	pb "github.com/Rchanger/Go-gRPC/ClientSideStramingGRPC/ClientSideStramingProto"
 	"fmt"
 	"io"
 	"log"
