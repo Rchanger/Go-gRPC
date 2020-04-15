@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "GRPCExample/BiDirectionGRPC/BiDirProto"
+	pb "github.com/Rchanger/Go-gRPC/BiDirectionGRPC/BiDirProto"
 	"fmt"
 	"io"
 	"log"

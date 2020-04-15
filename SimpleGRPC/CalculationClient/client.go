@@ -1,12 +1,13 @@
 package main
 
 import (
-	pb "GRPCExample/SimpleGRPC/ProtoDir"
 	"context"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
+	pb "github.com/Rchanger/Go-gRPC/SimpleGRPC/ProtoDir"
 
 	"google.golang.org/grpc"
 )

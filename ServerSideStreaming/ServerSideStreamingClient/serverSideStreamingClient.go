@@ -1,7 +1,7 @@
 package main
 
 import (
-	pb "GRPCExample/ServerSideStreaming/ServerSideStreamingProto"
+	pb "github.com/Rchanger/Go-gRPC/ServerSideStreaming/ServerSideStreamingProto"
 	"context"
 	"fmt"
 	"io"
