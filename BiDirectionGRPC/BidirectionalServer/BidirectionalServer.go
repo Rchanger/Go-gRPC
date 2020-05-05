@@ -1,11 +1,13 @@
 package main
 
 import (
-	pb "github.com/Rchanger/Go-gRPC/BiDirectionGRPC/BiDirProto"
+	"errors"
 	"fmt"
 	"io"
 	"log"
 	"net"
+
+	pb "github.com/Rchanger/Go-gRPC/BiDirectionGRPC/BiDirProto"
 
 	"google.golang.org/grpc"
 )
@@ -24,7 +26,8 @@ func (s *server) Max(stream pb.SimpleStreamService_MaxServer) error {
 	for {
 		select {
 		case <-ctx.Done():
-			break
+			// break
+			return errors.New("Context Done")
 		default:
 			// in, err := stream.Recv()
 			// log.Println("Received value")
